@@ -1,0 +1,20 @@
+h1 {
+	font-family: monospace;
+	color: blue;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+.definition {
+	text-decoration-line: underline;
+	margin-left: 50px;
+}
+
+.fungsi {
+	margin-left: 50px;
+}
+
+.garis {
+	text-decoration-line: underline;
+	color: red;
+}
