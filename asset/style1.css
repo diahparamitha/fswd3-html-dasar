@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: times new roman;
+  background-color: pink;
+}
+
+.header {
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Float four columns side by side */
+.col1 {
+  float: left;
+  padding: 0 10px;
+}
+
+.col2 {
+  margin-top: 30px;
+  float: left;
+  padding: 0 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-left: 250px;
+}
+
+.row img {
+  width: 170px;
+  height: 200px;
+  border-radius: 13px 13px 0 0;
+}
+
+/* Variabel konstan */
+:root {
+  --text-align: center;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --border-style:  solid;
+  --border-radius: 15px;
+}
+
+/* Style the counter cards */
+.card1 {
+  color: green;
+  border: 2px green;
+  background-color: lightgreen;
+  text-align: var(--text-align);
+  box-shadow: var(--box-shadow);
+  border-style: var(--border-style);
+  border-radius: var(--border-radius);
+}
+
+.card2 {
+  color: brown;
+  border: 2px brown;
+  background-color: khaki;
+  text-align: var(--text-align);
+  box-shadow: var(--box-shadow);
+  border-style: var(--border-style);
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+}
