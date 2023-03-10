@@ -1,0 +1,85 @@
+.container {
+	background-color: black;
+	width: 350px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+}
+
+.flex-container {
+	display: flex;
+	background-color: white;
+	padding: 5px;
+	column-gap: 10px;
+	row-gap : 10px;
+	flex-wrap: wrap;
+}
+
+.flex-container > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 30px;
+}
+
+.flex-item1 {
+	background-color: blueviolet;
+	width: 100px;
+	height: 100px;
+}
+
+.flex-item2 {
+	background-color: blue;
+	width: 100px;
+	height: 5px;
+}
+
+.flex-item3 {
+	background-color: orangered;
+	width: auto;
+	height: 80px;
+}
+
+.flex-item4 {
+	background-color: yellow;
+	width: 30px;
+	height: 5px;
+}
+
+.flex-item5 {
+	background-color: maroon;
+	width: 100px;
+	height: 100px;
+}
+
+.flex-item6 {
+	background-color: navy;
+	width: 30px;
+	height: 15px;
+}
+
+.flex-item7 {
+	background-color: slategrey;
+	width: auto;
+	height: 80px;
+}
+
+.flex-item8 {
+	background-color: green;
+	width: 100px;
+	height: 5px;
+}
+
+.flex-item9 {
+	background-color: crimson;
+	width: 30px;
+	height: 15px;
+}
+
+.flex-item10 {
+	background-color: deeppink;
+	width: 500px;
+	height: auto;
+}
