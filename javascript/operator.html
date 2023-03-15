@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operators | JavaScript</title>
+
+	<link rel="stylesheet" type="text/css" href="../js/js.css">
+
+</head>
+<body>
+
+	<div class="container">
+	<ol>
+		<li>Aritmatika</li>
+		<script>
+			let x = 7;
+			let y = 3;
+			let z = x + y;
+			let a = x * y;
+			let b = x - y;
+			let c = x / y;
+			let d = x ** y;
+			let e = x % y;
+
+			console.log(x + y);
+			console.log(x * y);
+			console.log(x - y);
+			console.log(x / y);
+			console.log(x ** y);
+			console.log(x % y);
+
+			document.write("x + y = " + z + "<br>");
+			document.write("x * y = " + a + "<br>");
+			document.write("x - y = " + b + "<br>");
+			document.write("x / y = " + c + "<br>");
+			document.write("x ** y = " + d + "<br>");
+			document.write("x % y = " + e + "<br>");
+
+		</script>
+
+		<br>
+		<li>Assignment</li>
+		<script>
+			let three = 3;
+
+			console.log(three);
+			document.write("Nilai three = " + three + "<br>");
+
+			three+=5;
+
+			console.log(three);
+			document.write("Nilai three sekarang = " + three + "<br>");
+
+			three-=3;
+
+			console.log(three);
+			document.write("Nilai three sekarang = " + three + "<br>");
+
+			three*=5;
+
+			console.log(three);
+			document.write("Nilai three sekarang = " + three + "<br>");
+
+			three/=5;
+
+			console.log(three);
+			document.write("Nilai three sekarang = " + three + "<br>");
+		</script>
+
+		<br>
+		<li>Comparison</li>
+		<script>
+			let five = 5;
+			let vefi = -5;
+
+			console.log( five == vefi);
+			console.log( five > vefi);
+			console.log( five < vefi);
+			console.log( five != vefi);
+
+			let f = five == vefi;
+			document.write("5 == -5 " + f + "<br>");
+
+			let i = five > vefi;
+			document.write("5 > -5 " + i + "<br>");
+
+			let v = five < vefi;
+			document.write("5 < -5 " + v + "<br>");
+
+			let ei = five != vefi;
+			document.write("5 != -5 " + ei + "<br>");
+
+		</script>
+
+		<br>
+		<li>Logical</li>
+		<script>
+			let limaa = true;
+			let lima = false;
+
+			console.log( limaa && lima);
+			console.log( limaa || lima);
+			console.log( !limaa );
+
+			let l = limaa && lima;
+			document.write("true dan false = " + l + "<br>");
+
+			let ii = limaa || lima;
+			document.write("true atau false = " + ii + "<br>");
+
+			let m = !limaa;
+			document.write("negasi true = " + m + "<br>");
+
+		</script>
+
+		<br>
+		<li>Bitwise</li>
+			<script>
+			let tes = 00000110;
+			let tes1 = 00001100;
+
+			console.log( tes & tes1);
+			console.log( tes | tes1);
+			console.log( ~tes );
+
+			let t = tes & tes1;
+			document.write("00000110 dan 00001100 = " + t + "<br>");
+
+			let ee = tes | tes1;
+			document.write("00000110 atau 00001100 = " + ee + "<br>");
+
+			let s = ~tes;
+			document.write("negasi 00000110 = " + s + "<br>");
+
+		</script>
+
+		<br>
+		<li>Ternary</li>
+		<script>
+			let me = "yes";
+			let you = "no";
+
+			console.log(me == you ? "yes" : "no");
+			console.log(me || you ? "yes" : "no");
+
+			document.write(me == you ? "yes" : "no" + "<br>");
+			document.write(me || you ? "yes" : "no" + "<br>");
+		</script>
+	</ol>
+
+	<a href="javascript.html"> Kembali </a>
+	</div>
+
+</body>
+</html>

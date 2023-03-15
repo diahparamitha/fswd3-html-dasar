@@ -1,0 +1,15 @@
+.container {
+	margin: 50px;
+	background-color: deepskyblue;
+	padding: 30px;
+}
+
+hr {
+	border: solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Types | JavaScript</title>
+
+	<script src="../asset/style.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/js.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<p>Contoh Tipe Data Primitive</p>
+		<ol>
+			<li>Number</li>
+			<script>
+				let age = 20;
+
+				alert("Selamat datang " + Nama);
+				document.write("Umur saya adalah " + age + "<br>")
+
+			</script>
+
+			<br>
+			<li>String</li>
+			<script>
+				let path = "Full Stack Web Dev";
+
+				document.write("Learning Path saya adalah " + path + "<br>")
+
+			</script>
+
+			<br>
+			<li>Boolean</li>
+			<script>
+				let x = 5;
+				let y = 5;
+				let z = 6;
+
+				document.write((x == y) + (x == z) + "<br>");        
+				
+			</script>
+
+			<br>
+			<li>Symbol</li>
+			<script>
+				let mahasiswa = Symbol('Me');
+				console.log(mahasiswa);
+				document.write(mahasiswa.description);
+			</script>
+
+		</ol>
+
+		<br>
+		<p>Tipe Data Object</p>
+		<script>
+			let Flower = {
+				name : "Tulip",
+				latin : "Tulipa",
+				color : [" yellow", " purple", " dan red"],
+			};
+
+			document.write("Ada bunga bernama " + Flower.name + " dengan nama latin " + Flower.latin + " dan memiliki berbagai macam warna" + Flower.color + "<br>")
+		</script>
+		<br>
+		<a href="javascript.html"> Kembali </a>
+	</div>
+
+</body>
+</html>

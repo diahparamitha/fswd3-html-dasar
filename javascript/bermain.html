@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suit | JavaScript</title>
+</head>
+<body>
+
+	<script>
+		alert("Hai, selamat datang di permainan suit!");
+
+		let ajak = confirm("Maukah kamu bermain bersamaku? ");
+
+		let nama = prompt("Kamu bisa memasukkan namamu disini ");
+		alert("Oke, " + nama + " mari kita mulai");
+
+		let input = prompt("Silahkan pilih jempol, telunjuk, atau kelingling");
+		if(input == "jempol") {
+			alert("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Seri!");
+			console.log("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Seri!");
+		}
+		else if (input == "telunjuk") {
+			alert("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Kalah!");
+			console.log("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Kalah!");
+		}
+		else if (input == "kelingking") {
+			alert("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Menang!");
+			console.log("Computer : jempol" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Menang!")
+		}
+		else if (input == "telunjuk") {
+			alert("Computer : kelingking" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Menang!");
+			console.log("Computer : kelingking" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Menang!");
+		}
+		else if (input == "telunjuk") {
+			alert("Computer : telunjuk" + "\n" + nama + " : " + input + "\n" + " Hasilnya Seri!");
+			console.log("Computer : telunjuk" + "\n" + nama + " : " + input + "\n" + " Hasilnya Seri!");
+		}
+		else if (input == "kelingking") {
+			alert("Computer : kelingking" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Seri!");
+			console.log("Computer : kelingking" + "\n" + nama + " : " + input + "\n" + " Hasilnya Kamu Seri!");
+		}
+		else {
+			alert("Kamu baik!");
+			console.log("Kamu baik!");
+		}
+		
+	</script>
+
+	<p> Diah Paramitha </p>
+	<p> ID Kegiatan : 4538964</p>
+	<a href="javascript.html"> Kembali </a>
+
+</body>
+</html>
