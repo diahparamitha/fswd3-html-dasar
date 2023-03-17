@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorting Data Mahasiswa</title>
+
+	<script src="data_mahasiswa.js"></script>
+</head>
+<body>
+	<script>
+		let femaleLength = 0
+		let maleLength = 0
+
+		let femaleScore = 0
+		let maleScore = 0
+
+		let femaleTotalScore = 0
+		let maleTotalScore = 0
+
+		const female = mahasiswa.filter(mhs => {
+			return mhs.gender == 'F'
+		})
+
+		const male = mahasiswa.filter(mhs => {
+			return mhs.gender == 'M'
+		})
+
+		mahasiswa.map(mhs => {
+			if (mhs.gender === 'F') {
+				femaleLength++
+				femaleScore += mhs.score
+			}else{
+				maleLength++
+				maleScore += mhs.score
+			}
+		})
+
+		const femaleMin = Math.min.apply(null, female.map(fml => fml.score))
+		const maleMin = Math.min.apply(null, male.map(ml => ml.score))
+		const femaleMax = Math.max.apply(null, female.map(fml => fml.score))
+		const maleMax = Math.max.apply(null, male.map(ml => ml.score))
+
+		const data = {
+			female: {
+				count: femaleLength,
+				score: {
+					average: femaleScore/femaleLength,
+					max: femaleMax,
+					min: femaleMin
+				},
+				students: female
+			},
+			male: {
+				count: maleLength,
+				score: {
+					average: maleScore/maleLength,
+					max: maleMax,
+					min: maleMin
+				},
+				students: female
+			}
+		}
+
+		console.log(data)
+	</script>
+
+</body>
+</html>

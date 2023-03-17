@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TO DO Lists</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	 <fieldset>
+        <legend>TO DO APP</legend>
+        <input type="text" name="tugas" placeholder="Tambah list tugas..." />
+        <input type="button" onclick="addTugas()" value="Tambah" />
+
+        <!-- daftar tugas yang telah di tambahkan atau dihapus -->
+        <div>
+        	<ul id="list-tugas"></ul>
+    	</div>
+    </fieldset>
+
+</body>
+
+	<script src="todo.js"></script>
+</html>
