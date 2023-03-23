@@ -1,4 +1,4 @@
-const url = "https://crudcrud.com/api/0b223b32b465446d86fe231a46786e69";
+const url = "https://crudcrud.com/api/0b223b32b465446d86fe231a46786e69/unicorns";
 let dataTugas = localStorage.getItem('dataTugas') ? JSON.parse(localStorage.getItem('dataTugas')) : [];
 
 function showTugas(){
