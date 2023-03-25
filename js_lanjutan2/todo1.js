@@ -1,4 +1,8 @@
-const url = "https://crudcrud.com/api/0b223b32b465446d86fe231a46786e69/unicorns";
+const baseUrl = "https://crudcrud.com/api/";
+const apiKey = "ef225aebac2c40dcab949ce0d3cbab3e";
+const url = baseUrl + apiKey;
+const endpoint = `${url}/todos`;
+
 let dataTugas = localStorage.getItem('dataTugas') ? JSON.parse(localStorage.getItem('dataTugas')) : [];
 
 function showTugas(){
@@ -22,15 +26,15 @@ function addTugas(){
     localStorage.setItem('dataTugas', JSON.stringify(dataTugas));
     showTugas();
 
-    fetch(url, {
-        method: "GET",
+    fetch(endpoint, {
+        method: "POST",
         headers: {
             "Content-type": "application/json",
         },
+        body: JSON.stringify(dataTugas),
     })
-        .then((res) => res.json())
+        .then((result) => result.json())
         .then((dataTugas) => {
-            alert('Berhasil yey!');
             console.log(dataTugas);
         })
 }
